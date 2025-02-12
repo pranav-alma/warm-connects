@@ -13,7 +13,7 @@ const PrincipalMessage = () => {
           className="max-w-4xl mx-auto"
         >
           <h2 className="text-4xl text-burgundy mb-12 text-center font-semibold">
-            Message from the Principal
+          From the Principal’s desk,
           </h2>
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="w-full md:w-1/3">
@@ -33,17 +33,18 @@ const PrincipalMessage = () => {
             </div>
             <div className="w-full md:w-2/3">
               <p className="text-gray-700 text-lg leading-relaxed mb-8">
-                The true aim of education since time immemorial has been to enquire
-                into the higher purpose of life, and to help humans ponder over two
-                main questions - 'Who am I?' and 'What am I here for?'. From a
-                child's early explorations into life, through play and years of
-                formal education, humans eventually aspire to reach a state of
-                being, that is described by seers as 'present moment awareness' or
-                just 'to be' and is regarded as the highest form of learning.
+              Welcome to SBSAlum, a space dedicated to celebrating the bonds that tie us together beyond
+the school years. As you embark on new journeys, we take pride in the individuals you have
+become and the impact you are making in the world. This platform is your gateway to
+reconnect, collaborate, and continue being a part of the SBS legacy.
+              </p>
+              <p className="text-gray-700 text-lg leading-relaxed mb-8">
+              Stay connected, share your stories, and inspire future generations. Once an SBS student,
+always a part of the SBS family!
               </p>
               <div className="text-gray-700">
+                <p className="text-sm">Warm Regrads,</p>
                 <p className="font-semibold">Dr. Mahesh Prasad</p>
-                <p className="text-sm">Principal, Step by Step School</p>
               </div>
             </div>
           </div>

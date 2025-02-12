@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 
 const HeroSection = () => {
@@ -8,19 +7,22 @@ const HeroSection = () => {
       <div
         className="absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/lovable-uploads/3ccd8266-39d6-4245-afa5-37125563aca7.png")',
+          backgroundImage: 'url("/lovable-uploads/4f2e22df096fb8f235c668c1269eeeca.jpeg")',
         }}
       />
 
+      {/* Brown gradient fade from bottom */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#210308] via-[#00000090] to-transparent" />
+
       {/* Content */}
-      <div className="relative container mx-auto px-4 h-screen flex flex-col justify-center">
+      <div className="relative container mx-auto px-4 h-screen flex items-end justify-center pb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <h2 
+          <h2
             className="text-white mb-2 animate-fade-in"
             style={{
               fontSize: '64px',
@@ -28,12 +30,12 @@ const HeroSection = () => {
               lineHeight: '56px',
               textAlign: 'center',
               textUnderlinePosition: 'from-font',
-              textDecorationSkipInk: 'none'
+              textDecorationSkipInk: 'none',
             }}
           >
             Welcome to
           </h2>
-          <h1 
+          <h1
             className="text-white mb-8 animate-fade-in"
             style={{
               fontSize: '96px',
@@ -42,7 +44,7 @@ const HeroSection = () => {
               letterSpacing: '-2px',
               textAlign: 'left',
               textUnderlinePosition: 'from-font',
-              textDecorationSkipInk: 'none'
+              textDecorationSkipInk: 'none',
             }}
           >
             SBSAlum

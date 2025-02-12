@@ -16,26 +16,31 @@ const MapSection = () => {
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
-      {/* Background Map */}
+      {/* Black & White Background Map */}
       <div 
         className="absolute inset-0 z-0"
         style={{ 
-          backgroundImage: `url('/lovable-uploads/22ff1d22-2a73-4894-ac8e-65e2505516af.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundImage: `url('/lovable-uploads/map/16f24a156b3554aa0b23cc8ca3b8e3cf.png')`,
+          backgroundSize: '110%', // Zoomed-in effect
+          backgroundPosition: 'center', // Keep it centered
           backgroundRepeat: 'no-repeat',
-          height: '100vh',
-          width: '100%'
+          width: '1713px',
+          height: '916.25px',
+          top: '-146.63px',
+          transform: 'scale(1.1)',
+          filter: 'grayscale(100%)',
         }}
       />
 
-      {/* Overlay gradient */}
+
+      {/* Rotated Slash "/" Gradient */}
       <div 
         className="absolute inset-0 z-1"
         style={{
-          background: 'linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0) 50%)'
+          background: 'linear-gradient(135deg, rgba(120,2,22,0.9) 0%, rgba(0,0,0,0.6) 40%, rgba(0,0,0,0.2) 70%, rgba(0,0,0,0) 100%)',
         }}
       />
+
 
       {/* Content Container */}
       <div className="relative z-10 container mx-auto px-4 py-16">

@@ -115,11 +115,15 @@ const recentEvents: Event[] = [
     imageUrl: "/release.jpg",
   },
 ];
-
 const EventsAndAnnouncements = () => {
   return (
-    <section className="w-full bg-gradient-to-r from-[#FCCC68] to-[#F07053] py-16">
-      <div className="container mx-auto px-4">
+    <section 
+      className="relative w-full py-16"
+      style={{
+        background: 'linear-gradient(225deg, #FCCC68 0%, #F07053 100%)',
+      }}
+    >
+      <div className="container mx-auto px-4 realtive z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Announcements Section */}
           <div className="bg-white rounded-lg p-8 shadow-md">
@@ -200,9 +204,7 @@ const EventsAndAnnouncements = () => {
                       <h3 className="font-bold text-lg">{event.title}</h3>
                       <p className="text-gray-600 italic">{event.date}</p>
                       <p className="text-gray-700">{event.organizer} / {event.email}</p>
-                      <Button
-                        className="mt-4 bg-[#C93329] hover:bg-[#A62822]"
-                      >
+                      <Button className="mt-4 bg-[#C93329] hover:bg-[#A62822]">
                         Register
                       </Button>
                     </div>
@@ -235,8 +237,25 @@ const EventsAndAnnouncements = () => {
           </div>
         </div>
       </div>
+
+      {/* Bottom Background Image */}
+      <div className="absolute bottom-0 left-0 w-full h-64 pointer-events-none z-0">
+  <div 
+    className="absolute inset-0 bg-no-repeat bg-bottom bg-cover w-full"
+    style={{
+      backgroundImage: `url('/lovable-uploads/background/ef35b8e5e57158a21745df533a24c52f.png')`,
+      backgroundSize: 'cover',
+      backgroundPosition: 'center bottom',
+      opacity: 0.7,
+      zIndex: 0
+    }}
+  />
+</div>
+
+
     </section>
   );
 };
+
 
 export default EventsAndAnnouncements;
