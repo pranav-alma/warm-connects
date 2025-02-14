@@ -1,5 +1,6 @@
 
 import { Button } from "./ui/button";
+import HoverButton from "./ui/HoverButton";
 
 const MapSection = () => {
   const markers = [
@@ -51,6 +52,8 @@ const MapSection = () => {
           <p className="text-xl text-white mb-8 font-light">
             Connect with your alumni today!
           </p>
+          <HoverButton text="Sign in now"/>
+
         </div>
       </div>
 

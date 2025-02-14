@@ -1,5 +1,6 @@
 
 import { Button } from "./ui/button";
+import HoverButton from "./ui/HoverButton";
 
 const Header = () => {
   return (
@@ -16,13 +17,15 @@ const Header = () => {
         />
       </div>
 
-        <Button
+        {/* <Button
           className="w-[156px] h-[48px] rounded-none bg-[#EE5023] hover:bg-[#EE5023]/90 text-white transition-colors duration-300"
           variant="ghost"
           style={{ position: 'relative', top: '54px', left: '0' }}
         >
           Login/Sign up
-        </Button>
+        </Button> */}
+        <HoverButton text="Login/Sign up" />
+
       </div>
     </header>
   );
