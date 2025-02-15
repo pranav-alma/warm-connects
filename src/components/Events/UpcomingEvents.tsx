@@ -1,5 +1,5 @@
 // import {React, } from "react";
-import {React, useState, useEffect} from "react";
+import React, {useState, useEffect} from "react";
 import Section from "./Section";
 import { Button } from "../ui/button";
 import axios from "axios"; 
@@ -50,8 +50,8 @@ const UpcomingEvents = () => {
               <div className="p-5 flex items-start">
                 {/* Left: Enlarged Date Box */}
                 <div className="border border-[#EF5D60] px-4 py-3 shadow-md text-center w-16 flex-shrink-0 flex flex-col items-center justify-center">
-                  <div className="text-sm font-semibold text-[#EF5D60]">{event.start_date_day}</div>
-                  <div className="text-2xl font-bold text-[#3A3F42]">{event.start_date_month}</div>
+                  <div className="text-sm font-semibold text-[#EF5D60]">{event.start_date_month}</div>
+                  <div className="text-2xl font-bold text-[#3A3F42]">{event.start_date_day}</div>
                 </div>
 
                 {/* Right: Description Container */}

@@ -178,7 +178,8 @@ const EventsAndAnnouncements = () => {
 
       {/* Main Content (Cards) */}
       <div className="container mx-auto px-4 relative z-10">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-2 gap-y-8 w-full">
+
           {/* Announcements Section */}
           <Announcements/>
 
