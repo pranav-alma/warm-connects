@@ -13,7 +13,7 @@ const UpcomingEvents = () => {
       try {
         const response = await axios.get("http://mica.almaconnect.com/api/events.json?website=www.mican.in"); // Replace with actual API URL
         const data = response.data.data;
-        console.log(data);
+        // console.log(data);
         
         setUpcomingEvents(data);
       } catch (error) {

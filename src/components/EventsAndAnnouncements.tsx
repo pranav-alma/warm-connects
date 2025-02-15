@@ -186,10 +186,10 @@ const EventsAndAnnouncements = () => {
           <Alumni alumni={alumni}></Alumni>
 
           {/* Upcoming Events Section */}
-          <UpcomingEvents upcomingEvents={upcomingEvents}></UpcomingEvents>
+          <UpcomingEvents></UpcomingEvents>
 
           {/* Recent Events Section */}
-          <RecentEvents recentEvents={recentEvents}></RecentEvents>
+          <RecentEvents></RecentEvents>
         </div>
       </div>
 
