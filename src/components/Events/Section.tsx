@@ -15,7 +15,7 @@ const Section: React.FC<SectionProps> = ({ sectionHeading, action, children, sty
     >
       {/* Header */}
       <div className="flex justify-between items-left border-b-2 border-[#C93329] pb-2 mb-4">
-        <h2 className="text-2xl font-bold font-serif">{sectionHeading}</h2>
+        <h2 className="text-2xl font-serif">{sectionHeading}</h2>
         {action && (
           <a href={action.url} className="text-[#1A73E8] text-sm hover:underline">
             {action.name}

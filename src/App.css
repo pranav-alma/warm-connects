@@ -33,6 +33,17 @@
   }
 }
 
+@font-face {
+  font-family: 'MonteCarlo';
+  src: url('/fonts/MonteCarlo-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.sunfont {
+  font-family: 'MonteCarlo', cursive !important;
+}
+
 .card {
   padding: 2em;
 }

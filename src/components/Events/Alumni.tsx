@@ -29,13 +29,26 @@ const Alumni = () => {
   // }, [distinguishAlumni]);
 
   return (
-    <Section sectionHeading="FEATURED ALUMNI">
-      {/* Apply scrolling only inside this div */}
-
-    <div className="max-h-96 overflow-y-auto pr-2">
-        <div className="space-y-4"> {/* Ensures proper spacing */}
+    <Section 
+      sectionHeading="FEATURED ALUMNI"
+      style={{
+        fontFamily: "Cardo, serif",
+        color: "#3A3F42" // Default text color
+      }}
+    >
+      {/* Scrollable Alumni List */}
+      <div className="max-h-96 overflow-y-auto pr-2">
+        <div className="space-y-0"> {/* Ensures proper spacing */}
           {distinguishAlumni.map((profile, index) => (
-            <div key={index} className="flex items-center space-x-4 p-4 bg-gray-50 rounded-lg">
+            <div 
+              key={index} 
+              className="flex items-center space-x-4 p-4 rounded-lg"
+              style={{
+                // backgroundColor: "#F1F0F0", // Light background for alumni card
+                fontFamily: "Cardo, serif"
+              }}
+            >
+              {/* Profile Picture */}
               <div className="w-12 h-12 rounded-full overflow-hidden">
                 <img
                   src={profile.picture.url}
@@ -43,23 +56,36 @@ const Alumni = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
+
+              {/* Profile Info */}
               <div>
-                <h3 className="font-bold">{profile.name}</h3>
-                <p className="text-gray-600">{profile.current_designation}, {profile.current_company}</p>
+                <h3 style={{ color: "#3A3F42", fontWeight: "bold", fontSize: "16px" }}>
+                  {profile.name}
+                </h3>
+                <p style={{ color: "#707274", fontSize: "14px" }}>
+                  {profile.current_designation}, {profile.current_company}
+                </p>
               </div>
             </div>
           ))}
         </div>
-        
-    </div>
+      </div>
 
-      <div className="mt-6 bg-[#FDE1D3] p-4">
-        <p className="text-gray-700">
-          Want to nominate someone for an award? Write to us at{" "}
-          <a href="mailto:abc@delhi.sbs.in" className="text-[#1A73E8]">
-            abc@delhi.sbs.in
+      {/* Nomination Section */}
+      <div 
+        className="mt-6 p-4" 
+        style={{
+          backgroundColor: "#FDE1D3",
+          fontFamily: "Cardo, serif"
+        }}
+      >
+        <p style={{ color: "#3A3F42" }}>
+          <b>Want to share your alumni story?</b> Write to us at{" "}
+          <a href="mailto:alumni@sbs-school.org" style={{ color: "#00C8B5", textDecoration: "underline" }}>
+            alumni@sbs-school.org
           </a>
         </p>
+
       </div>
     </Section>
   );

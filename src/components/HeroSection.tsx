@@ -22,19 +22,21 @@ const HeroSection = () => {
           transition={{ duration: 0.8 }}
           className="max-w-3xl"
         >
-          <h2
-            className="text-white mb-2 animate-fade-in"
-            style={{
-              fontSize: '64px',
-              fontWeight: '400',
-              lineHeight: '56px',
-              textAlign: 'center',
-              textUnderlinePosition: 'from-font',
-              textDecorationSkipInk: 'none',
-            }}
-          >
-            Welcome to
-          </h2>
+        <h2
+          className="sunfont text-white mb-2 animate-fade-in"
+          style={{
+            fontSize: '64px',
+            fontWeight: '400',
+            lineHeight: '56px',
+            textAlign: 'center',
+            textUnderlinePosition: 'from-font',
+            textDecorationSkipInk: 'none',
+            // fontFamily: "'Dancing Script', cursive",
+          }}
+        >
+          Welcome to
+        </h2>
+
           <h1
             className="text-white mb-8 animate-fade-in"
             style={{

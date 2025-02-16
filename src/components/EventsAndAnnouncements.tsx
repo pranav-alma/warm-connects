@@ -4,7 +4,6 @@ import Announcements from "./Events/Announcement";
 import Alumni from "./Events/Alumni"
 import UpcomingEvents from "./Events/UpcomingEvents"
 import RecentEvents from "./Events/RecentEvents";
-// const AlumEvents = require("./Events/AlumEvents").default
 
 
 interface Announcement {
@@ -184,7 +183,7 @@ const EventsAndAnnouncements = () => {
           <Announcements/>
 
           {/* Distinguished Alumni Section */}
-          <Alumni alumni={alumni}></Alumni>
+          <Alumni></Alumni>
 
           {/* Upcoming Events Section */}
           <UpcomingEvents></UpcomingEvents>

@@ -4,16 +4,17 @@ import HoverButton from "./ui/HoverButton";
 
 const MapSection = () => {
   const markers = [
-    { value: 484, top: "30%", left: "45%", size: "large", label: "The World Journal\non Juristic Polity" },
-    { value: 245, top: "40%", left: "42%", size: "medium", label: "Action Home World" },
-    { value: 138, top: "35%", left: "65%", size: "medium" },
-    { value: 115, top: "60%", left: "45%", size: "medium" },
-    { value: 44, top: "38%", left: "55%", size: "x-small", hasWhiteBox: true },
-    { value: 29, top: "45%", left: "50%", size: "x-small", hasWhiteBox: true },
-    { value: 16, top: "32%", left: "58%", size: "x-small", hasWhiteBox: true },
-    { value: 12, top: "35%", left: "48%", size: "x-small", hasWhiteBox: true },
-    { value: 12, top: "42%", left: "46%", size: "x-small", hasWhiteBox: true },
+    { value: 484, top: "40%", left: "55%", size: "large", label: "The World Journal\non Juristic Polity" },
+    { value: 245, top: "50%", left: "52%", size: "medium", label: "Action Home World" },
+    { value: 138, top: "45%", left: "75%", size: "medium" },
+    { value: 115, top: "70%", left: "55%", size: "medium" },
+    { value: 44, top: "48%", left: "65%", size: "x-small", hasWhiteBox: true },
+    { value: 29, top: "55%", left: "60%", size: "x-small", hasWhiteBox: true },
+    { value: 16, top: "42%", left: "68%", size: "x-small", hasWhiteBox: true },
+    { value: 12, top: "45%", left: "58%", size: "x-small", hasWhiteBox: true },
+    { value: 12, top: "52%", left: "56%", size: "x-small", hasWhiteBox: true },
   ];
+  
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
@@ -27,11 +28,13 @@ const MapSection = () => {
           backgroundRepeat: 'no-repeat',
           width: '1713px',
           height: '916.25px',
-          top: '-146.63px',
+          top: '-246.63px', // Moved 100px up
+          left: '-100px', // Moved 100px left
           transform: 'scale(1.1)',
           filter: 'grayscale(100%)',
         }}
       />
+
 
 
       {/* Rotated Slash "/" Gradient */}
