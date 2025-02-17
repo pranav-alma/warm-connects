@@ -1,6 +1,7 @@
 
 import { Button } from "./ui/button";
 import HoverButton from "./ui/HoverButton";
+import metadata from "../defaultMetadata.js"
 
 const MapSection = () => {
   const markers = [
@@ -14,7 +15,10 @@ const MapSection = () => {
     { value: 12, top: "45%", left: "58%", size: "x-small", hasWhiteBox: true },
     { value: 12, top: "52%", left: "56%", size: "x-small", hasWhiteBox: true },
   ];
-  
+
+  const handleLogin = () => {
+    window.location.href = metadata.networkAlmaUrl;
+  }
 
   return (
     <section className="relative w-full min-h-screen overflow-hidden">
@@ -55,7 +59,7 @@ const MapSection = () => {
           <p className="text-xl text-white mb-8 font-light">
             Connect with your alumni today!
           </p>
-          <HoverButton text="Sign in now"/>
+          <HoverButton text="Sign in now" handleClick={handleLogin}/>
 
         </div>
       </div>

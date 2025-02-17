@@ -2,6 +2,15 @@ const metadata = {
     name: "{AlmaConnect}",
     pageTitle: "{AlmaConnect} Alumni network | AlmaConnect",
     networkBaseUrl: "https://www.almaconnect.com/",
+    networkAlmaUrl: "https://stepbystep.almaconnect.com/",
+    deploymentUrl: "sbsalum.ac.in.s3-website.ap-south-1.amazonaws.com",
+    sectionUrls: {
+      news: `api/news.json`,
+      announcements: `api/announcements.json`,
+      distinguishedAlumni: `api/metadata.json`,
+      upcomingEvents: `api/events.json`,
+      recentMemories: `api/memories.json`,
+    },
     logo: "{logoImport}",
     favicon: "{faviconImport}",
     mainMenuItems: [
@@ -76,5 +85,8 @@ const metadata = {
       },
     }
   }
+ 
+console.log(metadata.sectionUrls);
+
   
-  export {metadata as default};
+export {metadata as default};

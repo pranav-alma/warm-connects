@@ -1,10 +1,15 @@
 
 import { motion } from "framer-motion";
 import { Button } from "./ui/button";
+import metadata from "../defaultMetadata.js"
 
-const profileImages = Array(21).fill("/placeholder.svg");
+// const profileImages = Array(21).fill("/placeholder.svg");
 
 const NetworkSection = () => {
+  const handleLogin = () => {
+    window.location.href = metadata.networkAlmaUrl;
+  }
+
   return (
     <section className="py-20 bg-[#FFFEF3] flex justify-center items-center">
       <div className="container mx-auto px-4 flex justify-center">
@@ -35,7 +40,7 @@ const NetworkSection = () => {
             <b> Search </b> and <b> Network </b> with alums across programs and batches
           </h2>
 
-          <Button className="bg-[#EE5023] hover:bg-[#d9461f] text-white transition-colors duration-300 px-12 py-6 text-lg rounded-none">
+          <Button onClick={handleLogin} className="bg-[#EE5023] hover:bg-[#d9461f] text-white transition-colors duration-300 px-12 py-6 text-lg rounded-none">
             Login/Signup
           </Button>
 

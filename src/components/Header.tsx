@@ -1,8 +1,15 @@
 
 import { Button } from "./ui/button";
 import HoverButton from "./ui/HoverButton";
+import metadata from "../defaultMetadata.js"
 
 const Header = () => {
+  const handleLogin = () => {
+    // console.log(metadata.networkBaseUrl);
+    
+    window.location.href = metadata.networkAlmaUrl;
+  }
+
   return (
     <header className="absolute top-0 left-0 right-0 z-50">
       <div className="container mx-auto px-4 py-6 flex justify-between items-center">
@@ -24,7 +31,8 @@ const Header = () => {
         >
           Login/Sign up
         </Button> */}
-        <HoverButton text="Login/Sign up" />
+        {/* <div onClick={handleLogin}><HoverButton text="Login/Sign up" /></div>; */}
+        <HoverButton text="Login/Sign up" handleClick={handleLogin} />
 
       </div>
     </header>

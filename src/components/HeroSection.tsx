@@ -31,7 +31,7 @@ const HeroSection = () => {
             textAlign: 'center',
             textUnderlinePosition: 'from-font',
             textDecorationSkipInk: 'none',
-            // fontFamily: "'Dancing Script', cursive",
+            fontFamily: "'Sun Valley - Demo', sans-serif",
           }}
         >
           Welcome to
