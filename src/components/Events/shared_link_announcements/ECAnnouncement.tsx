@@ -27,12 +27,12 @@ export const ECAnnouncement: React.FC<ECAnnouncementProps> = ({ event }) => {
   return (
     <div>
       <a href={event.event_url}>
-        <img
+        {/* <img
           className="border-box"
           src={coverPic}
           style={{ cursor: "pointer", height: "300px" }}
           alt="Event Cover"
-        />
+        /> */}
       </a>
       <div style={{ padding: "20px 15px", minHeight: "1%", overflow: "hidden" }}>
         <div style={{ float: "left", textAlign: "center", paddingRight: "12px", marginTop: "16px" }}>

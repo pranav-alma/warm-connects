@@ -2,8 +2,11 @@ const metadata = {
     name: "{AlmaConnect}",
     pageTitle: "{AlmaConnect} Alumni network | AlmaConnect",
     networkBaseUrl: "https://www.almaconnect.com/",
-    networkAlmaUrl: "https://stepbystep.almaconnect.com/",
-    deploymentUrl: "sbsalum.ac.in.s3-website.ap-south-1.amazonaws.com",
+    // networkAlmaUrl: "https://stepbystep.almaconnect.com/",
+    // deploymentUrl: "sbsalum.ac.in.s3-website.ap-south-1.amazonaws.com",
+    networkAlmaUrl: "https://mica.almaconnect.com/",
+    deploymentUrl: "www.mican.in",
+
     sectionUrls: {
       news: `api/news.json`,
       announcements: `api/announcements.json`,
